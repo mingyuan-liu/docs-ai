@@ -3,7 +3,7 @@ sidebar_position: 9
 # ModelZoo
 >
 > ModelZoo内模型数据定期更新，测试方法可参考[modelzoo-demo
-> ](https://github.com/spacemit-com/model-zoo-vision/tree/da8c2ea24288d765b3197989731c791477e71f12)
+> ](https://github.com/spacemit-com/model-zoo)
 
 - [ModelZoo](#modelzoo)
   - [基础模型](#基础模型)
@@ -16,7 +16,9 @@ sidebar_position: 9
     - [yolov8](#yolov8)
     - [yolov12](#yolov12)
   - [大模型](#大模型)
-    - [Qwen3](#qwen3)
+    - [Qwen](#qwen)
+    - [HunYuan](#hunyuan)
+    - [Llama](#llama)
 
 ## 基础模型
 - K1
@@ -186,12 +188,9 @@ sidebar_position: 9
 >- OS：bianbu-4.0rc1
 >- date：2026-4-16
 >- 6400DDR，A100@1.8GHz
+>- bash: llama-bench -m model.gguf -t 8 -p 128 -n 128 -mmp 0 -fa 1 -ub 128
 
-### Qwen3
-
-- K1
-
-> TBD
+### Qwen
 
 - K3
 
@@ -204,4 +203,20 @@ sidebar_position: 9
 | qwen3.5-0.8B | Q4_0 | 59.64 | 24.30 | - | - |
 | qwen3.5-2B | Q4_1 | 46.30 | 13.75 | - | - |
 | HY-MT1.5-1.8B | Q4_K_M | 169.17 | 15.36 | - | - |
+| llama2-7B | Q4_0 | 49.45 | 6.90 | - | - |
+
+### HunYuan
+
+- K3
+
+| 模型名 | 量化类型 | PP128 (token/s) | TG128 (token/s) | PP1280 (token/s) | TG1280 (token/s) |
+| --- | --- | --- | --- | --- | --- |
+| HY-MT1.5-1.8B | Q4_K_M | 169.17 | 15.36 | - | - |
+
+### Llama
+
+- K3
+
+| 模型名 | 量化类型 | PP128 (token/s) | TG128 (token/s) | PP1280 (token/s) | TG1280 (token/s) |
+| --- | --- | --- | --- | --- | --- |
 | llama2-7B | Q4_0 | 49.45 | 6.90 | - | - |

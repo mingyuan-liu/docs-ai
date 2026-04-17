@@ -6,10 +6,11 @@ sidebar_position: 4
 
 ---
 
-- [QuickStart](#quickstart)
-- [量化参数配置](#量化参数配置)
-- [量化精度调优](#量化精度调优)
-- [ChangeLog](#changelog)
+- [XSlim](#xslim)
+  - [QuickStart](#quickstart)
+  - [量化参数配置](#量化参数配置)
+  - [量化精度调优](#量化精度调优)
+  - [ChangeLog](#changelog)
 
 ## QuickStart
 - Install
@@ -71,7 +72,7 @@ python -m xslim -i demo.onnx -o demo.q.onnx
         "calibration_step": 100, "可缺省，限制最大的校准文件个数，默认为100"
         "calibration_device": "cpu", "可缺省，默认为cuda，自动检测，否则为cpu"
         "calibration_type": "default",  "可缺省，默认为default，可选kl、minmax、percentile、mse"
-        "input_parametres": [
+        "input_parameters": [
             {
                 "input_name": "data", "可缺省，由工具从模型中读取",
                 "input_shape": [1, 3, 224, 224], "可缺省，输入的shape，由工具从模型中读取"
@@ -164,7 +165,7 @@ def preprocess_impl(path_list: Sequence[str], input_parametr: dict) -> torch.Ten
 
     Args:
         path_list (Sequence[str]): 一个校准batch的文件列表
-        input_parametr (dict): 等同于配置中的calibration_parameters.input_parametres[idx]
+        input_parametr (dict): 等同于配置中的calibration_parameters.input_parameters[idx]
 
     Returns:
         torch.Tensor: 一个batch的校准数据
@@ -186,7 +187,7 @@ def preprocess_impl(path_list: Sequence[str], input_parametr: dict) -> torch.Ten
 ~~~
 
 ## 量化精度调优
-> TBD
+详情参考[github-xslim-accuracy-tuning](https://github.com/spacemit-com/xslim/blob/main/doc/accuracy_tuning_zh.md)
 
 ## ChangeLog
 详情参考[github-xslim-releases](https://github.com/spacemit-com/xslim/releases)
