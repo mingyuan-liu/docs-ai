@@ -2,7 +2,8 @@ sidebar_position: 9
 
 # ModelZoo
 >
-> ModelZoo内模型数据定期更新
+> ModelZoo内模型数据定期更新，测试方法可参考[modelzoo-demo
+> ](https://github.com/spacemit-com/model-zoo-vision/tree/da8c2ea24288d765b3197989731c791477e71f12)
 
 - [ModelZoo](#modelzoo)
   - [基础模型](#基础模型)
@@ -24,9 +25,9 @@ sidebar_position: 9
 >- date：2026-2-9
 
 - K3
->- 推理引擎版本: spacemit-ort-2.0.2+beta1
->- OS：bianbu-4.0aplha1
->- date：2026-2-9
+>- 推理引擎版本: spacemit-ort-2.0.2+rc2
+>- OS：bianbu-4.0rc1
+>- date：2026-4-16
 >- 6400DDR，A100@1.8GHz
 
 ### resnet
@@ -43,10 +44,10 @@ sidebar_position: 9
 
 | 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
 | --- | --- | --- | --- | --- | --- | --- |
-| resnet18 | int8 | 224x224 | 7.66 | 4.60 | 2.92 | - |
-| resnet50 | int8 | 224x224 | 18.91 | 11.17 | 7.37 | 5.44 |
-| resnet50.batch4 | int8 | 224x224 | - | - | - | 15.55 |
-| resnet50 | fp16 | 224x224 | 35.10 | 24.13 | 19.34 | - |
+| resnet18 | int8 | 224x224 | 7.66 | 4.60 | 2.92 | 2.07 |
+| resnet50 | int8 | 224x224 | 18.91 | 11.17 | 6.98 | 5.22 |
+| resnet50.batch4 | int8 | 224x224 | 73.37 | 40.19 | 23.19 | 15.55 |
+| resnet50 | fp16 | 224x224 | 34.22 | 23.18 | 18.37 | 16.46 |
 
 ### mobilenet
 
@@ -61,12 +62,12 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| mobilenet_v1 | int8 | 224x224 | 13.20 | 7.46 | 4.88 |
-| mobilenet_v2 | int8 | 224x224 | 14.51 | 8.62 | 5.91 |
-| mobilenet_v3_small | fp16 | 224x224 | 6.75 | 4.31 | 2.90 |
-| mobilenet_v3_large | fp16 | 224x224 | 13.37 | 8.25 | 5.48 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- |---|
+| mobilenet_v1 | int8 | 224x224 | 12.73 | 7.2 | 3.9 | 2.30 |
+| mobilenet_v2 | int8 | 224x224 | 17.48 | 9.85 | 5.19 | 3.25 |
+| mobilenet_v3_small | fp16 | 224x224 | 6.75 | 4.31 | 2.90 | 2.70 |
+| mobilenet_v3_large | fp16 | 224x224 | 13.51 | 8.14 | 5.16 | 4.07 |
 
 ### efficientnet
 
@@ -83,14 +84,14 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| efficientnet_v1_b0 | int8 | 224x224 | 28.30 | 16.33 | 10.46 |
-| efficientnet_v1_b1 | int8 | 224x224 | 43.66 | 25.50 | 16.57 |
-| efficientnet_v2_s | int8 | 224x224 | 42.52 | 24.34 | 15.20 |
-| efficientnet_v1_b0 | fp16 | 224x224 | 30.51 | 18.41 | 12.33 |
-| efficientnet_v1_b1 | fp16 | 224x224 | 44.64 | 27.09 | 18.22 |
-| efficientnet_v2_s | fp16 | 224x224 | 54.56 | 31.69 | 20.53 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- |---|
+| efficientnet_v1_b0 | int8 | 224x224 | 28.30 | 16.33 | 10.46 | 7.94 |
+| efficientnet_v1_b1 | int8 | 224x224 | 43.66 | 25.50 | 16.57 | 12.62 |
+| efficientnet_v2_s | int8 | 224x224 | 42.52 | 24.34 | 15.20 | 11.97 |
+| efficientnet_v1_b0 | fp16 | 224x224 | 30.51 | 18.41 | 12.33 | 9.95 |
+| efficientnet_v1_b1 | fp16 | 224x224 | 44.64 | 27.09 | 18.22 | 14.45 |
+| efficientnet_v2_s | fp16 | 224x224 | 54.56 | 31.69 | 20.53 | 14.55 |
 
 ### vit
 
@@ -105,8 +106,8 @@ sidebar_position: 9
 
 | 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
 | --- | --- | --- | --- | --- | --- | --- |
-| vit_b_16 | int8 | 224x224 | 152.84 | 88.43 | 55.92 | 37.46 |
-| vit_b_16 | fp16 | 224x224 | 174.96 | 104.06 | 71.47 | - |
+| vit_b_16 | int8 | 224x224 | 112.43 | 62.83 | 38.78 | 25.83 |
+| vit_b_16 | fp16 | 224x224 | 147.27 | 91.96 | 66.03 | 54.53 |
 
 ### yolov5
 
@@ -120,11 +121,11 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| yolov5n | int8 | 640x640 | 57.51 | 31.80 | 19.34 |
-| yolov5s | int8 | 640x640 | 83.67 | 45.97 | 27.81 |
-| yolov5m | int8 | 640x640 | 159.01 | 86.06 | 49.00 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- | --- |
+| yolov5n | int8 | 640x640 | 52.15 | 28.36 | 16.64 | 10.9 |
+| yolov5s | int8 | 640x640 | 79.81 | 43.43 | 25.77 | 16.66 |
+| yolov5m | int8 | 640x640 | 156.78 | 84.41 | 47.46 | 30.42 |
 
 ### yolov6
 
@@ -137,10 +138,10 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| yolov6n | int8 | 640x640 | 57.28 | 31.75 | 19.05 |
-| yolov6s | int8 | 640x640 | 102.75 | 55.43 | 32.57 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- | --- |
+| yolov6n | int8 | 640x640 | 39.42 | 21.91 | 13.19 | 8.81 |
+| yolov6s | int8 | 640x640 | 71.0 | 38.98 | 23.05 | 14.42 |
 
 ### yolov8
 
@@ -154,11 +155,11 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| yolov8n | int8 | 640x640 | 62.12 | 34.20 | 20.41 |
-| yolov8s | int8 | 640x640 | 91.86 | 50.25 | 29.89 |
-| yolov8m | int8 | 640x640 | 173.04 | 93.61 | 52.81 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- | --- |
+| yolov8n | int8 | 640x640 | 50.67 | 27.81 | 16.39 | 11.04 |
+| yolov8s | int8 | 640x640 | 82.39 | 45.06 | 26.96 | 18.08 |
+| yolov8m | int8 | 640x640 | 165.84 | 89.342 | 50.522 | 33.96 |
 
 ### yolov12
 
@@ -172,13 +173,19 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms |
-| --- | --- | --- | --- | --- | --- |
-| yolo12n | int8 | 640x640 | 162.82 | 96.70 | 67.21 |
-| yolo12s | int8 | 640x640 | 284.73 | 165.38 | 118.05 |
-| yolo12m | int8 | 640x640 | 518.51 | 297.74 | 203.24 |
+| 模型名 | type | shape | 1 Core/ms | 2 Core/ms | 4 Core/ms | 8 Core/ms |
+| --- | --- | --- | --- | --- | --- | --- |
+| yolo12n | int8 | 640x640 | 122.262 | 65.914 | 38.624 | 28.20 |
+| yolo12s | int8 | 640x640 | 213.505 | 113.878 | 66.6732 | 47.99 |
+| yolo12m | int8 | 640x640 | 410.327 | 217.392 | 124.668 | 87.35 |
 
 ## 大模型
+
+- K3
+>- llama.cpp版本：0.0.7+a3
+>- OS：bianbu-4.0rc1
+>- date：2026-4-16
+>- 6400DDR，A100@1.8GHz
 
 ### Qwen3
 
@@ -188,9 +195,13 @@ sidebar_position: 9
 
 - K3
 
-| 模型名 | 量化类型 | PP128 (token/s) | TG128 (token/s) |
-| --- | --- | --- | --- |
-| qwen3-0.6B | Q4_0 | 286 | 38.2 |
-| qwen3-4B | Q4_0 | 52.71 | 9.02 |
-| qwen3-moe-30B-A3B | Q4_0 | 37.8 | 10.68 |
-| qwen3next-80B-A3B | Q2_K | 12.84 | 4.01 |
+| 模型名 | 量化类型 | PP128 (token/s) | TG128 (token/s) | PP1280 (token/s) | TG1280 (token/s) |
+| --- | --- | --- | --- | --- | --- |
+| qwen3-0.6B | Q4_0 | 478.45 | 49.36 | - | - |
+| qwen3-1.7B | Q4_0 | 202.50 | 22.97 | - | - |
+| qwen3-4B | Q4_0 | 80.05 | 9.57 | - | - |
+| qwen3-moe-30B-A3B | Q4_0 | 57.41 | 11.89 | 44.3 | 10.7
+| qwen3.5-0.8B | Q4_0 | 59.64 | 24.30 | - | - |
+| qwen3.5-2B | Q4_1 | 46.30 | 13.75 | - | - |
+| HY-MT1.5-1.8B | Q4_K_M | 169.17 | 15.36 | - | - |
+| llama2-7B | Q4_0 | 49.45 | 6.90 | - | - |

@@ -14,6 +14,8 @@ sidebar_position: 1
       - [快速验证模型性能](#快速验证模型性能)
   - [ProviderOption说明](#provideroption说明)
       - [`SPACEMIT_EP_INTRA_THREAD_NUM`](#spacemit_ep_intra_thread_num)
+      - [`SPACEMIT_EP_INTRA_THREAD_AFFINITY`](#spacemit_ep_intra_thread_affinity)
+      - [`SPACEMIT_EP_INTER_THREAD_NUM`](#spacemit_ep_inter_thread_num)
       - [`SPACEMIT_EP_USE_GLOBAL_INTRA_THREAD`](#spacemit_ep_use_global_intra_thread)
       - [`SPACEMIT_EP_DUMP_SUBGRAPHS`](#spacemit_ep_dump_subgraphs)
       - [`SPACEMIT_EP_DEBUG_PROFILE`](#spacemit_ep_debug_profile)
@@ -100,6 +102,24 @@ outputs = session.run(None, {"data": input_tensor})
 ~~~ C++
 std::unordered_map<std::string, std::string> provider_options;
 provider_options["SPACEMIT_EP_INTRA_THREAD_NUM"] = "4";
+~~~
+
+#### `SPACEMIT_EP_INTRA_THREAD_AFFINITY`
+>+ 指定ep的线程亲和性，逗号间隔，数量与`SPACEMIT_EP_INTRA_THREAD_NUM`一致
+~~~ C++
+std::unordered_map<std::string, std::string> provider_options;
+provider_options["SPACEMIT_EP_INTRA_THREAD_NUM"] = "4";
+// 具体绑定核心，需要根据K1、K3实际情况判定
+provider_options["SPACEMIT_EP_INTRA_THREAD_AFFINITY"] = "8,10,12,14";
+~~~
+
+#### `SPACEMIT_EP_INTER_THREAD_NUM`
+>+ 指定ep的多会话推理，相当于SPACEMIT_EP_INTRA_THREAD_NUM * SPACEMIT_EP_INTER_THREAD_NUM
+>+ 若SPACEMIT_EP_INTER_THREAD_NUM=2，则可以在两个线程中跑同一个Session，达成多路推理的效果
+~~~ C++
+std::unordered_map<std::string, std::string> provider_options;
+provider_options["SPACEMIT_EP_INTRA_THREAD_NUM"] = "4";
+provider_options["SPACEMIT_EP_INTER_THREAD_NUM"] = "2";
 ~~~
 
 #### `SPACEMIT_EP_USE_GLOBAL_INTRA_THREAD`
