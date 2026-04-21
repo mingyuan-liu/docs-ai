@@ -89,8 +89,6 @@ $$
 * _输入矩阵_ `A` 和 `B` 存放在单个向量寄存器中，其元素位宽由指令决定，并直接编码在指令中。在当前的 SpacemiT AI 矩阵扩展实现中，仅支持 `LMUL = 1`，其余 `LMUL` 编码均为保留值；在任意 IME 指令中使用非 1 的 `LMUL` 值，应触发非法指令异常。
     * **注**：在社区 `Zvvm` 扩展中，还存在两个参数 `LMUL` 和 `W`。其中，`LMUL` 表示输入 tile 的寄存器组倍数，`W` 规定指令输出数据类型与输入数据类型的位宽比值。在未来的实现中，`λ` 可以通过 `vtype` 中的 `lambda[2:0]` 字段解码获得，`W` 与 `LMUL` 也会以更统一的方式纳入编程模型；但在当前实现（A60、A100）中，`LMUL` 仅支持 1，`W` 以具体指令的功能约束为准。
 
-
-<a id="fig0vlen256"></a>
 ![图1：矩阵 tile 几何与参数关系示意图。](images/ime_extension_png/fig0vlen256.png)
 *图 1. 在 32 元素向量寄存器、λ=2、W=4、VLEN=256、LMUL=1 条件下的矩阵 tile 几何与元素顺序。向量寄存器按二维 tile 解释，元素下标展示 tile 内元素排序。*
 
@@ -112,12 +110,10 @@ tile 维度由扩位设置与 `LMUL` 推导：
 
 由图 1 可见，向量寄存器中的元素在 λ 方向上连续。tile `A` 与 tile `C` 按行优先（row-major）排序，而 tile `B` 按列优先（column-major）排序。
 
-<a id="fig1ime-tile-lmul_2_4"></a>
 ![图2：LMUL 缩放下的矩阵 tile 排布关系。](images/ime_extension_png/fig1ime-tile-lmul_2_4.png)
 *图 2. 矩阵 tile 在 LMUL=2（左）与 LMUL=4（右）时的元素排布关系。蓝色箭头表示按一维向量顺序访问时，同属一个 tile 的连续元素。*
 
 LMUL 仅沿 K 维缩放 tile，使 tile 的有效 K 维按 LMUL 倍数增长。图中的蓝色箭头表示：在按一维向量元素顺序访问时，哪些连续元素共同构成对应的 tile。
-
 
 ## 1.6 SpacemiT AI 指令集的子扩展
 
@@ -366,7 +362,6 @@ $$
 
 `Vs1`、`Vs2`、`Vd` 的排布见图 3。tile `A` 与 tile `C` 按行优先（row-major）排序，而 tile `B` 按列优先（column-major）排序。
 
-<a id="fig2tilelayout"></a>
 ![图3：寄存器中的二维矩阵 tile 排布示意图。](images/ime_extension_png/fig2tilelayout.png)
 *图 3. 在 VLEN=256、W=4、λ=2 条件下，`Vs1`、`Vs2` 与 `Vd` 的二维矩阵排布示意。*
 
@@ -399,8 +394,6 @@ $$
 |Zvzip|指令|vunzipo.v|vupack.vv，可实现等效功能|
 |Zvzip|指令|vpaire.vv|vnpack.vv，可实现等效功能|
 |Zvzip|指令|vpairo.vv|vnpack.vv，结合 `vsrl.vv` 可实现等效功能|
-
-
 
 
 # 第 4 章 指令全景、子扩展与快速索引
@@ -490,7 +483,6 @@ $$
 
 矩阵乘法的几何关系如图 4 所示，其中左侧为 `A` 矩阵，右侧为 `B` 矩阵。
 
-<a id="fig3vmadot"></a>
 ![图4：`vmadot` 基础路径的矩阵计算示意图。](images/ime_extension_png/fig3vmadot.png)
 *图 4. 在 VLEN=1024、λ=4、W=4、LMUL=1 条件下的 `vmadot` 矩阵计算示意。左侧为 `A` tile，右侧为 `B` tile。*
 
@@ -631,7 +623,6 @@ int main()
 
 图 5 展示了 `slide = 1 / 2 / 3` 时的窗口移动方式，以及窗口跨越 `Vs1` 与 `Vs1+1` 时的拼接取数方法。
 
-<a id="fig4vmadot"></a>
 ![图5：整数滑窗矩阵乘法（`slide=1`）示意图。](images/ime_extension_png/fig4vmadotslide.png)
 *图 5. 在 VLEN=1024、λ=4、W=4、LMUL=1 条件下，`vmadot1`（即 `slide=1`）的滑窗取数与计算示意。*
 
@@ -788,7 +779,6 @@ int main()
 本指令集定义 4:2 结构化稀疏整数矩阵乘法。该路径从 `A` 的每 4 个源元素中，根据 4-bit 掩码恢复 2 个有效值，再与 `B` 执行点积并累加到 Int32 目标。
 图 6 展示了 4:2 结构化稀疏恢复过程，同时说明了掩码如何从每 4 个候选元素中恢复出 2 个有效元素。
 
-<a id="fig5vmadotsp"></a>
 ![图6：4:2 结构化稀疏恢复与 `vmadot.sp` 计算示意图。](images/ime_extension_png/fig5vmadotsp.png)
 *图 6. 在 VLEN=1024、λ=4、W=4、LMUL=1 条件下，`vmadot.sp v16, v2, v8, v0, i8` 的稀疏恢复与乘加流程示意。*
 
@@ -1049,7 +1039,6 @@ $$
 
 图 7 给出了该路径的计算流程。
 
-<a id="fig6vmadothp"></a>
 ![图7：分块量化整数矩阵乘法（`vmadot.hp`）示意图。](images/ime_extension_png/fig6vmadothp.png)
 *图 7. 在 VLEN=1024、λ=8、W=2、LMUL=1 条件下，`vmadot.hp v16, v2, v8, v0, i8` 的计算流程示意。*
 
@@ -1259,7 +1248,6 @@ C \leftarrow C + A \times B^T
 $$
 图 8 给出了该路径的计算流程。
 
-<a id="fig7fwmadot"></a>
 ![图8：`vfwmadot` 浮点矩阵乘法示意图。](images/ime_extension_png/fig7fwmadot.png)
 *图 8. 在 VLEN=1024、λ=8、W=2、LMUL=1 条件下，`vfwmadot v16, v2, v8` 的计算流程示意。*
 ### 6.1.2 指令成员
@@ -1411,7 +1399,6 @@ int main()
 
 `vfwmadot1`、`vfwmadot2`、`vfwmadot3` 与 `vfwmadot` 的计算类型相同，但在 `A` 的读取侧附加滑窗位移。
 
-<a id="fig8fwmadotslide"></a>
 ![图9：浮点滑窗矩阵乘法（`vfwmadot1`）示意图。](images/ime_extension_png/fig8fwmadotslide.png)
 *图 9. 在 VLEN=1024、λ=8、W=2、LMUL=1 条件下，`vfwmadot1 v16, v2, v8` 的滑窗计算示意。*
 
@@ -1611,7 +1598,6 @@ int main()
 
 这些指令在功能上与社区 `Zvzip` 扩展具有一定相似性。`pack` 与 `unpack` 的功能见下图：
 
-<a id="fig9packunpack"></a>
 ![图10：`pack` 与 `unpack` 功能示意图。](images/ime_extension_png/fig9packunpack.jpg)
 *图 10. `pack` 与 `unpack` 指令对数据流交织与解交织的功能示意。*
 
@@ -1715,7 +1701,6 @@ for (p = 0; p < (VLEN * LMUL / pack_len); p++) {
 
 ### 7.3.1 应用举例
 
-<a id="fig10packexample"></a>
 ![图11：`vpack` 指令示例的数据排布变换效果。](images/ime_extension_png/fig10packexample.jpg)
 *图 11. 后文的 `vpack` 指令片段可将输入数据重排为图示布局。*
 
