@@ -2,7 +2,7 @@ sidebar_position: 2
 
 # AI Computer解决方案汇总
 
-## 知了（zenow）
+## 知了（Zenow）
 项目介绍
 ## 项目特点
 
@@ -12,7 +12,7 @@ sidebar_position: 2
 
 [知了详细介绍](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/zenow.md)
 
-## 与会（yumeet）
+## 与会（Yumeet）
 项目介绍
 ## 项目特点
 
@@ -22,7 +22,7 @@ sidebar_position: 2
 
 [与会详细介绍](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/yumeet.md)
 
-## 多模态视觉分析（灵狐）
+## 见智（Seewise）
 项目介绍
 ## 项目特点
 
@@ -30,4 +30,4 @@ sidebar_position: 2
 - **语言支持**:
 - **提供功能**:
 
-[灵狐详细介绍](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/vlm.md)
+[见智详细介绍](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/vlm.md)
