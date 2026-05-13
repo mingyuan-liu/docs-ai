@@ -4,6 +4,17 @@ sidebar_position: 1
 
  > **SpacemiT-ONNXRuntime**包含[ONNXRuntime](https://github.com/microsoft/onnxruntime)基础推理库与SpacemiT-ExecutionProvider加速后端，并保持了整体架构的解耦，因此其使用方法与社区版本ONNXRuntime几乎一致。
 
+ ## 平台支持情况
+
+|      平台 & 系统       |       是否支持加速      |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ✅ 支持                |
+| K1 OpenHarmony5.0     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME  | ✅ 支持                |
+| K3 Buildroot          | ✅ 支持                |
+| K3 OpenHarmony6.1     | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ✅ 支持                |
+
  ---
 
 - [SpacemiT-ONNXRuntime](#spacemit-onnxruntime)
@@ -34,11 +45,10 @@ sidebar_position: 1
 ## QuickStart
 
 #### 资源获取
-> &#x2139;&#xfe0f;`https://archive.spacemit.com/spacemit-ai/onnxruntime/`目录下定期更新
-~~~ bash
-# 例如拉取2.0.1版本
-wget https://archive.spacemit.com/spacemit-ai/onnxruntime/spacemit-ort.riscv64.2.0.1.tar.gz
-~~~
+```shell
+sudo apt-get update
+sudo apt-get install -y spacemit-onnxruntime libopencv-dev python3-spacemit-ort python3-pillow python3-matplotlib python3-opencv
+```
 
 #### ONNXRuntime模型推理
 详情可以参考社区文档[ONNXRuntime推理介绍](https://onnxruntime.ai/docs/#onnx-runtime-for-inferencing)，以及通过[ONNXRuntime示例](https://github.com/microsoft/onnxruntime-inference-examples)获取代码示例
