@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-13 09:46:09
- * @LastEditTime: 2026-05-13 10:36:10
+ * @LastEditTime: 2026-05-13 13:50:11
  * @FilePath: \doc\docs-ai\zh\application_tools\index.md
  * @Description: 
 -->
@@ -16,8 +16,8 @@ sidebar_position: 3
 ## AI SDK
 SpacemiT AI SDK是面向进迭时空 K 系列芯片打造的 AI 应用开发套件。它在保留原有多模态能力组件的基础上，进一步向上承接 Agent、AI Robot、AI Computer 等应用形态，提供统一的能力封装与接口接入方式.
 - [AI SDK](ai-sdk.md)
-- [LLM SDK(不维护，统一到AI SDK)](llmsdk.md)
-- [Speech SDK(不维护，统一到AI SDK)](speechsdk.md)
+- [LLM SDK(临时版本，后续统一到AI SDK)](llmsdk.md)
+- [Speech SDK(临时版本，后续统一到AI SDK)](speechsdk.md)
 
 ## LangChain
 LangChain 是一个基于大型语言模型（LLM）的编程框架。  

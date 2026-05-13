@@ -17,7 +17,10 @@ sidebar_position: 1
 |      平台 & 系统       |       是否支持加速      |
 |-----------------------|-----------------------|
 | K1 Buildroot          | ❌ 不支持              |
-| K1 OpenHarmony5.0     | ❌ 不支持              |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持              |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
 | K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 
 ## 技术架构

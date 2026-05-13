@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-13 09:53:15
- * @LastEditTime: 2026-05-13 10:37:41
+ * @LastEditTime: 2026-05-13 14:16:40
  * @FilePath: \doc\docs-ai\zh\application_tools\llamaindex.md
  * @Description: 
 -->
@@ -17,10 +17,13 @@ sidebar_position: 8
 
 ## 平台支持情况
 
-|      平台 & 系统       |       是否支持加速      |
+|      平台 & 系统       |       是否支持     |
 |-----------------------|-----------------------|
-| K1 Buildroot          | ❌ 不支持              |
-| K1 OpenHarmony5.0     | ❌ 不支持              |
+| K1 Buildroot          | ❌ 不支持               |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持             |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
 | K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 
 ## 安装

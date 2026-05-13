@@ -2,9 +2,20 @@
 sidebar_position: 3
 ---
 
-# SPEECH SDK (不维护，统一到AI SDK)
+# SPEECH SDK (临时版本，后续统一到AI SDK)
 
 **Speech Model SDK** （简称 `sm-sdk`）是一个集成多种语音处理技术的综合性AI语音服务平台，提供语音活动检测（VAD）、语音识别(ASR)、机器翻译（Translation）、语音合成(TTS)、关键词检测(KWS)、说话人分离（Diarization）等功能于一体的统一解决方案。
+
+## 平台支持情况
+
+|      平台 & 系统       |       是否支持     |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ❌ 不支持               |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持             |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 
 ## ✨ 核心特性
 
