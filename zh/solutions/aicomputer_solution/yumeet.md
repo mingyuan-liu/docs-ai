@@ -1,5 +1,5 @@
 ---
-sidebar_position: 15
+sidebar_position: 2
 ---
 
 # 与会（yumeet）用户指南

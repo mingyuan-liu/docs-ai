@@ -5,14 +5,15 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-12 20:12:39
- * @LastEditTime: 2026-05-13 09:14:26
- * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\seewise.md
+ * @LastEditTime: 2026-05-13 09:14:35
+ * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\agentforce.md
  * @Description: 
 -->
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# 见智(Seewise)
+# 点将(Agentforce)
+
 TBD
 
