@@ -5,13 +5,11 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-12 20:12:39
- * @LastEditTime: 2026-05-13 09:14:26
+ * @LastEditTime: 2026-05-13 09:19:07
  * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\seewise.md
  * @Description: 
 -->
----
 sidebar_position: 3
----
 
 # 见智(Seewise)
 TBD
