@@ -1,6 +1,6 @@
 sidebar_position: 6
 
-# openClaw
+# OpenClaw
 
 ## 环境要求
 
