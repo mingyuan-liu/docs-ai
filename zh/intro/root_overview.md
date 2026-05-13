@@ -31,10 +31,10 @@ sidebar_position: 1
 本章系统梳理了面向【AI计算机/AI机器人/智能视觉/智能语音】等关键领域的全栈式AI解决方案，旨在清晰呈现各方案的技术路径与核心优势，助力客户基于自身需求进行高效评估与精准选型，从而加速智能产品的创新与落地进程。
 
 - [AI Robot解决方案汇总](../solutions/airobot_solution_list.md)  
-    - [AI 聊天机器人](../solutions/airobot_solution_list.md#ai-聊天机器人)  
-    - [智能小车跟随](../solutions/airobot_solution_list.md#智能小车跟随)  
-    - [机械臂智慧零售](../solutions/airobot_solution_list.md#机械臂智慧零售)  
-    - [LeRobot 机械臂](../solutions/airobot_solution_list.md#lerobot机械臂) 
+    - [AI 视觉感知](../solutions/airobot_solution_list.md)  
+    - [AI 语音交互](../solutions/airobot_solution_list.md)  
+    - [具身智能应用](../solutions/airobot_solution_list.md)  
+    - [典型机器人场景](../solutions/airobot_solution_list.md) 
 - [AI Computer解决方案汇总](../solutions/aicomputer_solution/index.md) 
     - [知了（Zenow）](../solutions/aicomputer_solution/zenow.md) 
     - [与会（Yumeet）](../solutions/aicomputer_solution/yumeet.md) 
