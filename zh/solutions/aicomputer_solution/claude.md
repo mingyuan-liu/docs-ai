@@ -5,11 +5,11 @@
  *
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-03-09 14:26:58
- * @LastEditTime: 2026-05-13 14:09:16
+ * @LastEditTime: 2026-05-13 14:41:22
  * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\claude.md
  * @Description:
 -->
-sidebar_position: 5
+sidebar_position: 6
 
 # Claude Code
 

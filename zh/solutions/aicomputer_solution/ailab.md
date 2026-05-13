@@ -5,13 +5,13 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-12 20:12:39
- * @LastEditTime: 2026-05-13 14:41:35
- * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\hermes.md
+ * @LastEditTime: 2026-05-13 14:41:18
+ * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\ailab.md
  * @Description: 
 -->
-sidebar_position: 8
+sidebar_position: 5
 
-# Hermes
+# SpacemiT AI Lab
 
 ## 平台支持情况
 
@@ -19,7 +19,7 @@ sidebar_position: 8
 |-----------------------|-----------------------|
 | K1 Buildroot          | ❌ 不支持              |
 | K1 OpenHarmony     | ❌ 不支持              |
-| K1 Bianbu LXQT/GNOME    | ✅ 支持            |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持           |
 | K3 Buildroot          | ❌ 不支持              |
 | K3 OpenHarmony     | ❌ 不支持              |
 | K3 Bianbu LXQT/GNOME  | ✅ 支持                |

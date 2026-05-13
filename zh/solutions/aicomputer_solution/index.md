@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-03-17 11:27:55
- * @LastEditTime: 2026-05-13 09:28:42
+ * @LastEditTime: 2026-05-13 14:42:29
  * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\index.md
  * @Description: 
 -->
@@ -61,6 +61,13 @@ sidebar_position: 2
 待补充
 
 - [点将(Agentforce)](agentforce.md)
+
+## SpacemiT AI Lab
+
+待补充
+
+- [SpacemiT AI Lab](ailab.md)
+
 
 ## Claude Code
 
