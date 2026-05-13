@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-13 13:48:16
- * @LastEditTime: 2026-05-13 14:06:50
+ * @LastEditTime: 2026-05-13 14:43:08
  * @FilePath: \doc\docs-ai\zh\intro\root_overview.md
  * @Description: 
 -->
@@ -40,6 +40,7 @@ sidebar_position: 1
     - [与会（Yumeet）](../solutions/aicomputer_solution/yumeet.md) 
     - [见智（Seewise）](../solutions/aicomputer_solution/seewise.md) 
     - [点将（Agentforce）](../solutions/aicomputer_solution/agentforce.md) 
+    - [SpacemiT AI Lab](../solutions/aicomputer_solution/ailab.md) 
 
 ## 第二章 应用软件栈
 
