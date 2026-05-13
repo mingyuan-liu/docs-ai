@@ -5,13 +5,11 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-12 20:12:39
- * @LastEditTime: 2026-05-13 09:14:35
+ * @LastEditTime: 2026-05-13 09:21:48
  * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\agentforce.md
  * @Description: 
 -->
----
 sidebar_position: 4
----
 
 # 点将(Agentforce)
 

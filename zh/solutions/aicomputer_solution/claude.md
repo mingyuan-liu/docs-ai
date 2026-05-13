@@ -9,9 +9,7 @@
  * @FilePath: \doc\docs-bianbu\zh\ai\claude.md
  * @Description:
 -->
----
 sidebar_position: 5
----
 
 # Claude Code
 
