@@ -83,7 +83,7 @@ wget https://www.modelscope.cn/models/unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF/r
 llama-bench -m Qwen3-30B-A3B-Instruct-2507-Q4_0.gguf -t 8 -p 64 -n 64 -mmp 0 -fa 1
 ```
 参数说明：
-- -t: 指定运行测试时使用的线程数量
+- -t: 指定运行测试时使用的线程数量（K3:<=8,K1:<=4）
 - -p: 指定‌提示词（Prompt）的长度‌，单位为 token
 - -n: 指定输出生成长度
 - -mmp: 是否启用 Multi-Modal Prompt 支持
@@ -101,7 +101,7 @@ llama-cli -m Qwen3-30B-A3B-Instruct-2507-Q4_0.gguf -t 8 --no-mmap -c 15360
 
 参数说明：
 - -m: 指定.gguf格式模型文件的路径
-- -t: 指定运行测试时使用的线程数量
+- -t: 指定运行测试时使用的线程数量（K3:<=8,K1:<=4）
 - --no-mmap: 禁用内存映射（memory mapping）功能
 - -c: 设置‌上下文长度（context size）
 
@@ -118,7 +118,7 @@ llama-server -m Qwen3-30B-A3B-Instruct-2507-Q4_0.gguf -t 8 --host 127.0.0.1 --po
 
 参数说明：
 - -m: 指定.gguf格式模型文件的路径
-- -t: 指定运行测试时使用的线程数量
+- -t: 指定运行测试时使用的线程数量（K3:<=8,K1:<=4）
 - --host: 指定服务器监听的 IP 地址
 - --port: 设置服务器监听的端口号，默认为 8080
 - --ctx-size: 控制模型上下文长度（以 token 为单位），影响模型处理长文本的能力
