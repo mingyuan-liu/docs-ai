@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-04-03 17:56:08
- * @LastEditTime: 2026-05-13 10:36:21
+ * @LastEditTime: 2026-05-13 14:14:53
  * @FilePath: \doc\docs-ai\zh\application_tools\llmsdk.md
  * @Description: 
 -->
@@ -13,7 +13,18 @@
 sidebar_position: 2
 ---
 
-# LLM SDK (不维护，统一到AI SDK)
+# LLM SDK (临时版本，后续统一到AI SDK)
+
+## 平台支持情况
+
+|      平台 & 系统       |       是否支持     |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ❌ 不支持               |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持             |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 
 ## 安装服务
 

@@ -5,8 +5,8 @@
  *
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-03-09 14:26:58
- * @LastEditTime: 2026-03-18 20:44:10
- * @FilePath: \doc\docs-bianbu\zh\ai\claude.md
+ * @LastEditTime: 2026-05-13 14:09:16
+ * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\claude.md
  * @Description:
 -->
 sidebar_position: 5
@@ -17,10 +17,13 @@ sidebar_position: 5
 
 ## 平台支持情况
 
-|      平台 & 系统       |       是否支持加速      |
+|      平台 & 系统       |       是否支持     |
 |-----------------------|-----------------------|
 | K1 Buildroot          | ❌ 不支持              |
-| K1 OpenHarmony5.0     | ❌ 不支持              |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ❌ 不支持             |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
 | K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 
 ## 1. 安装

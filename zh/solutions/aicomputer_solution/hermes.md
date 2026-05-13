@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-12 20:12:39
- * @LastEditTime: 2026-05-13 09:29:31
+ * @LastEditTime: 2026-05-13 14:10:32
  * @FilePath: \doc\docs-ai\zh\solutions\aicomputer_solution\hermes.md
  * @Description: 
 -->
@@ -13,5 +13,14 @@ sidebar_position: 7
 
 # Hermes
 
-TBD
+## 平台支持情况
+
+|      平台 & 系统       |       是否支持     |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ❌ 不支持              |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ✅ 支持            |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ✅ 支持                |
 

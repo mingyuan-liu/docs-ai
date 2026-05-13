@@ -1,3 +1,14 @@
+<!--
+ * Copyright 2022-2023 SPACEMIT. All rights reserved.
+ * Use of this source code is governed by a BSD-style license
+ * that can be found in the LICENSE file.
+ * 
+ * @Author: David(qiang.fu@spacemit.com)
+ * @Date: 2026-05-13 13:48:16
+ * @LastEditTime: 2026-05-13 14:06:50
+ * @FilePath: \doc\docs-ai\zh\intro\root_overview.md
+ * @Description: 
+-->
 sidebar_position: 1
 
 # 进迭时空 RISC-V AI 计算平台
@@ -18,21 +29,27 @@ sidebar_position: 1
 ## 第一章 解决方案
 
 本章系统梳理了面向【AI计算机/AI机器人/智能视觉/智能语音】等关键领域的全栈式AI解决方案，旨在清晰呈现各方案的技术路径与核心优势，助力客户基于自身需求进行高效评估与精准选型，从而加速智能产品的创新与落地进程。
- 
-- [AI 聊天机器人](../solutions/solution_list.md#ai-聊天机器人)  
-- [智能小车跟随](../solutions/solution_list.md#智能小车跟随)  
-- [机械臂智慧零售](../solutions/solution_list.md#机械臂智慧零售)  
-- [LeRobot 机械臂](../solutions/solution_list.md#lerobot机械臂)  
- 
+
+- [AI Robot解决方案汇总](../solutions/airobot_solution_list.md)  
+    - [AI 聊天机器人](../solutions/airobot_solution_list.md#ai-聊天机器人)  
+    - [智能小车跟随](../solutions/airobot_solution_list.md#智能小车跟随)  
+    - [机械臂智慧零售](../solutions/airobot_solution_list.md#机械臂智慧零售)  
+    - [LeRobot 机械臂](../solutions/airobot_solution_list.md#lerobot机械臂) 
+- [AI Computer解决方案汇总](../solutions/aicomputer_solution/index.md) 
+    - [知了（Zenow）](../solutions/aicomputer_solution/zenow.md) 
+    - [与会（Yumeet）](../solutions/aicomputer_solution/yumeet.md) 
+    - [见智（Seewise）](../solutions/aicomputer_solution/seewise.md) 
+    - [点将（Agentforce）](../solutions/aicomputer_solution/agentforce.md) 
+
 ## 第二章 应用软件栈
 
 本章旨在系统介绍AI应用软件栈，通过展示其集成流程，帮助开发者快速掌握应用部署落地的完整路径，显著降低开发门槛，提升创新效率，最终赋能多样化的端侧AI应用创新。
 
-- [Ollama](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/ollama.md)
-- [LocalAI](https://bianbu.spacemit.com/ai/localai)
-- [OpenwebUI](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/bianbu/ai/openwebui.md)
-- [Node-RED](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/ros/02_System_configuration/2.6_Docker_Usage/2.6.2_Node-RED_Usage.md)
-- [Demo Docker](https://www.spacemit.com/community/document/info?lang=zh&nodepath=software/SDK/ros/02_System_configuration/2.6_Docker_Usage/2.6.4_DemoZoo_Usage.md)
+- [SpacemiT AI SDK](../application_tools/ai-sdk.md)
+- [LangChain](../application_tools/langchain.md)
+- [Ollama](../application_tools/ollama.md)
+- [LocalAI](../application_tools/localai.md)
+
 
 ## 第三章 计算软件栈
 

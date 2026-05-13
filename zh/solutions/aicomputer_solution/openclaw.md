@@ -9,6 +9,17 @@ sidebar_position: 6
 - 包管理器: pnpm 10.23.0
 - 硬件：进迭时空 K1 或 K3 开发板
 
+## 平台支持情况
+
+|      平台 & 系统       |       是否支持     |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ❌ 不支持              |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ✅ 支持            |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony    | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ✅ 支持                |
+
 ## 普通用户安装 OpenClaw 步骤
 
 ### 1. 安装 nvm，用于 node version 的管理

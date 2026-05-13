@@ -5,7 +5,7 @@
  * 
  * @Author: David(qiang.fu@spacemit.com)
  * @Date: 2026-05-13 09:53:15
- * @LastEditTime: 2026-05-13 10:37:12
+ * @LastEditTime: 2026-05-13 14:16:05
  * @FilePath: \doc\docs-ai\zh\application_tools\ollama.md
  * @Description: 
 -->
@@ -16,6 +16,17 @@ sidebar_position: 5
 # Ollama
 
 **Ollama** 是一款开源跨平台大语言模型（LLM）本地化部署工具，专注于简化 LLM 在本地环境中的运行、管理和推理流程。它支持用户通过简单命令在个人设备（如 PC、边缘服务器）上直接部署和调用预训练模型（如 LLaMA、DeepSeek 等），无需依赖云端服务或高性能 GPU。
+
+## 平台支持情况
+
+|      平台 & 系统       |       是否支持     |
+|-----------------------|-----------------------|
+| K1 Buildroot          | ❌ 不支持               |
+| K1 OpenHarmony     | ❌ 不支持              |
+| K1 Bianbu LXQT/GNOME    | ✅ 支持             |
+| K3 Buildroot          | ❌ 不支持              |
+| K3 OpenHarmony     | ❌ 不支持              |
+| K3 Bianbu LXQT/GNOME  | ❌ 不支持加速               |
 
 ## 安装
 
