@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 1
 ---
 
 # 知了（Zenow）用户指南
