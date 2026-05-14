@@ -17,22 +17,28 @@ This document presents SpacemiT’s proprietary AI computing architecture, built
 
 ## 1. Solutions
 
-This section provides a comprehensive overview of SpacemiT’s full-stack AI solutions tailored for key verticals—including AI computing devices, AI-powered robotics, intelligent vision systems, and smart voice applications. Each solution is presented with its technical roadmap and core differentiators to help customers efficiently evaluate and select the optimal fit for their specific use cases—accelerating time-to-market for intelligent products.
- 
-- [AI Chatbot](../solutions/solution_list.md#ai-chatbot)  
-- [Intelligent AGV Following Robot](../solutions/solution_list.md#intelligent-agv-following-robot)  
-- [Smart Retail Robotic Arm](../solutions/solution_list.md#smart-retail-robotic-arm)  
-- [LeRobot Robotic Arm](../solutions/solution_list.md#lerobot-robotic-arm)  
- 
+This chapter provides a systematic overview of full-stack AI solutions for key domains such as **AI computers, AI robots, intelligent vision, and intelligent speech**. It is intended to clearly present the technical approach and core advantages of each solution, helping customers evaluate options efficiently and choose the best fit for their needs, thereby accelerating intelligent product innovation and deployment.
+
+- [AI Robot Solution Overview](../solutions/airobot_solution_list.md)  
+  - [AI Visual Perception](../solutions/airobot_solution_list.md)  
+  - [AI Voice Interaction](../solutions/airobot_solution_list.md)  
+  - [Embodied Intelligence Applications](../solutions/airobot_solution_list.md)  
+  - [Typical Robot Scenarios](../solutions/airobot_solution_list.md)
+- [AI Computer Solution Overview](../solutions/aicomputer_solution/index.md)
+  - [Zenow](../solutions/aicomputer_solution/zenow.md)
+  - [Yumeet](../solutions/aicomputer_solution/yumeet.md)
+  - [Seewise](../solutions/aicomputer_solution/seewise.md)
+  - [Agentforce](../solutions/aicomputer_solution/agentforce.md)
+  - [SpacemiT AI Lab](../solutions/aicomputer_solution/ailab.md)
+
 ## 2. Application Software Stack
 
-This section introduces SpacemiT’s AI application software stack, designed to streamline deployment and simplify development. By illustrating the integration workflow, we aim to lower the barrier to entry for developers and accelerate innovation across a wide range of edge AI applications.
+This chapter introduces the AI application software stack in a structured manner. By showing its integration workflow, it helps developers quickly understand the complete path from application development to deployment, significantly lowering the barrier to entry, improving innovation efficiency, and ultimately enabling diverse edge-side AI applications.
 
-- [Ollama](https://www.spacemit.com/community/document/info?lang=en&nodepath=software/SDK/bianbu/ai/ollama.md)
-- [LocalAI](https://www.spacemit.com/community/document/info?lang=en&nodepath=software/SDK/bianbu/ai/localai.md)
-- [OpenwebUI](https://www.spacemit.com/community/document/info?lang=en&nodepath=software/SDK/bianbu/ai/openwebui.md)
-- [Node-RED](https://www.spacemit.com/community/document/info?lang=en&nodepath=software/SDK/ros/02_System_configuration/2.6_Docker_Usage/2.6.2_Node-RED_Usage.md)
-- [Demo Docker](https://www.spacemit.com/community/document/info?lang=en&nodepath=software/SDK/ros/02_System_configuration/2.6_Docker_Usage/2.6.4_DemoZoo_Usage.md)
+- [SpacemiT AI SDK](../application_tools/ai-sdk.md)
+- [LangChain](../application_tools/langchain.md)
+- [Ollama](../application_tools/ollama.md)
+- [LocalAI](../application_tools/localai.md)
 
 ## 3. Compute Software Stack
 
